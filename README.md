@@ -1,3 +1,7 @@
+## Name
+Chang Liu & Tianyi Xiao
+1. `F=FF[+FF]F[+FF]FF+`
+
 # lab03-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
