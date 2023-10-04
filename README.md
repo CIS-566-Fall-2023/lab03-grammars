@@ -31,8 +31,13 @@ Premise: `AF`
 Rule 1: `A = [\+F[\+F]/-F][/-F[/-F][\+F]]`
 
 Rule 2: `F = FAF`
+
 ![](lsystem_3_rules.png)
-#### results
+#### designs explain
+For our L-System grammar, first of all, I design the first rule to make the branch of our tree grow into two sub-branch in symmetry directions, and then each has its own sub-sub-branches.
+Then, the second rule makes sure that the whole tree can grow into left, right, and straight directions, with different scales.
+
+### results
 ![](lsystem_3.png)
 
 # lab03-grammars
