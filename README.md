@@ -1,3 +1,45 @@
+## Name
+Chang Liu & Tianyi Xiao
+
+## Rules & Images
+### 1. Wheat grammar puzzle
+#### rules
+`F=FF[+FF]F[+FF]FF+`
+
+(angle = 20 degrees)
+#### iteration = 3
+![](lsystem_1.png)
+#### iteraton = 4
+![](lsystem_1_4.png)
+
+### 2. Square grammar puzzle
+#### rules
+`F=F-F+F+F-F`
+
+(angle = 90 degrees)
+
+![](lsystem_2_rules.png)
+#### iteration = 3
+![](lsystem_2.png)
+#### iteraton = 4
+![](lsystem_2_4.png)
+
+### 3. Custom Plant
+#### rules
+Premise: `AF`
+
+Rule 1: `A = [\+F[\+F]/-F][/-F[/-F][\+F]]`
+
+Rule 2: `F = FAF`
+
+![](lsystem_3_rules.png)
+#### designs explain
+For our L-System grammar, first of all, I design the first rule to make the branch of our tree grow into two sub-branch in symmetry directions, and then each has its own sub-sub-branches.
+Then, the second rule makes sure that the whole tree can grow into left, right, and straight directions, with different scales.
+
+### results
+![](lsystem_3.png)
+
 # lab03-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
