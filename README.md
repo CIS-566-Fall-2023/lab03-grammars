@@ -38,6 +38,8 @@ Rule2:          D=[C]+(60)[C]+(60)[C]+(60)[C]+(60)[C]+(60)[C]
 
 ![](images/snowflake1.jpg)
 
+![](images/demo.gif)
+
 | ![](images/sfiter1.jpg) | ![](images/sfiter2.jpg) | ![](images/sfiter3.jpg) | ![](images/sfiter4.jpg) |
 |:--:|:--:|:--:|:--:|
 | *iterations=1* | *iterations=2* | *iterations=3* | *iterations=4* |
