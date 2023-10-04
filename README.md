@@ -1,22 +1,33 @@
 # lab03-grammars
-Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
+Diana Ouyang and Yuhan Liu practiced grammars. 
+Special thanks to this awesome [L-Systems Renderer](https://piratefsh.github.io/p5js-art/public/lsystems/). 
 
 ## 1. Wheat grammar puzzle
-Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949853-cf2306b3-3537-4c24-91b5-0a3083bc87c0.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949859-5e432b4b-f18d-48b5-a9e9-8d7dba255955.png">
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems1.png)
 
 ## 2. Square grammar puzzle
-How about this one? Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949895-87cdfb43-da7c-4867-ab1b-107e1ba9d2a7.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949904-a9cdfe0f-319e-4ca8-9935-dd338217a7cf.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4681-80f8-ffeb54be4dcf.png">
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems.png)
 
-## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant. 
+## 3. Blue Sea Dragon
+For our custom L-system, we decided to try and replicate a cute blue sea slug. 
 
-## Submission
-- Create a pull request against this repository
-- In your readme, list your solutions and format your README nicely
-- Profit
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/blueseadragon.jpg)
+
+Our final L-System Render is here. 
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems-slug.png)
+
+### Overview
+We have two main components: the slug's body and the slug's frilly limbs. 
+Thus, we assigned a rule to generate each: X for the body and Z for the frilly limbs. 
+We also chose to keep the angle and iteration length small so that we could compound F and +/- as to increase the angle or step sizes. 
+
+### Rule X: Slug Body
+The X rule breaks down the slug's body into parts. First, we added few F steps to create the long tail, before moving into the first pair of frilly limbs. We noticed that the angle of the frilly limbs moves closer to 90 degrees as the limbs become bigger. Thus, we used the + and - operators to account for this in creating the second and third limb pairs. We also slowly add in angle changes to create the arc in the slug body. Finally, we created the Y-shaped head using more Fs. The X rule calls the Z rule when creating the frilly limb.
+
+### Rule Z: Frilly Limbs
+The Z rule creates fans on top of itself to form the slug's frilly limbs. We also made it recursive, so that the limbs round out and have more frills as the iteration increases, but we found iteration 2 to be most accurate (an image of a higher iteration is included for fun, it has some pretty crazy frills but keeps the overall slug shape). In short, we focused on creating an accurate representation of the slug shape (even though it's a line drawing) over complexity of the l-system. 
+
+### Houdini Slug Assembly Plans
+If we have more time, we'd like to port the rules into Houdini's l-system. Then, we could form the actual sea slug by copying a teardrop mesh shape to all the curves of the slug. We could even animate the slug by adjusting the angle parameter in the l-system. 
+
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems-slug2.png)
