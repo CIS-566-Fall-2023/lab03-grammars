@@ -2,6 +2,19 @@
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
 ## 1. Wheat grammar puzzle
+![](lab3_0.png)
+
+## 2. Square grammar puzzle
+![](lab3_1.png)
+
+## 3. Custom plant
+I tried to generate a tree that looks natural. In my grammer, B is to control the whole shape of the tree; A basicly represents the main branches of the tree; F increases its length at each iteration to make the bottom of the tree longer while parts at the leaves shorter, also it rotates ('/') a little to increase some randomness of the looking.
+![](lab3_2.png)
+
+
+
+
+## 1. Wheat grammar puzzle
 Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
 <img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
 <img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949853-cf2306b3-3537-4c24-91b5-0a3083bc87c0.png">
