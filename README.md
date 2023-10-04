@@ -27,7 +27,9 @@ Chang Liu & Tianyi Xiao
 ### 3. Custom Plant
 #### rules
 Premise: `AF`
+
 Rule 1: `A = [\+F[\+F]/-F][/-F[/-F][\+F]]`
+
 Rule 2: `F = FAF`
 ![](lsystem_3_rules.png)
 #### results
