@@ -3,15 +3,21 @@ Chang Liu & Tianyi Xiao
 
 ## Rules & Images
 ### 1. Wheat grammar puzzle
+#### rules
 `F=FF[+FF]F[+FF]FF+`
+
+(angle = 20 degrees)
 #### iteration = 3
 ![](lsystem_1.png)
 #### iteraton = 4
 ![](lsystem_1_4.png)
 
 ### 2. Square grammar puzzle
-`F=F-F+F+F-F`
 #### rules
+`F=F-F+F+F-F`
+
+(angle = 90 degrees)
+
 ![](lsystem_2_rules.png)
 #### iteration = 3
 ![](lsystem_2.png)
@@ -19,6 +25,13 @@ Chang Liu & Tianyi Xiao
 ![](lsystem_2_4.png)
 
 ### 3. Custom Plant
+#### rules
+Premise: `AF`
+Rule 1: `A = [\+F[\+F]/-F][/-F[/-F][\+F]]`
+Rule 2: `F = FAF`
+![](lsystem_3_rules.png)
+#### results
+![](lsystem_3.png)
 
 # lab03-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
