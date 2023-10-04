@@ -14,7 +14,7 @@ For our custom L-system, we decided to try and replicate a cute blue sea slug.
 ![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/blueseadragon.jpg)
 
 Our final L-System Render is here. 
-![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems-slug2.png)
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems-slug.png)
 
 We have two main components: the slug's body and the slug's frilly limbs. 
 Thus, we assigned a rule to generate each: X for the body and Z for the frilly limbs. 
@@ -26,4 +26,4 @@ The Z rule creates fans on top of itself to form the slug's frilly limbs. We als
 
 If we have more time, we'd like to port the rules into Houdini's l-system. Then, we could form the actual sea slug by copying a teardrop mesh shape to all the curves of the slug. We could even animate the slug by adjusting the angle parameter in the l-system. 
 
-![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems-slug.png)
+![Image](https://github.com/yuhanliu-tech/lab03-grammars/blob/main/l-systems-slug2.png)
