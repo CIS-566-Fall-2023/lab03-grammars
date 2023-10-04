@@ -1,6 +1,26 @@
 # lab03-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
+# Thomas and Rain
+
+1. <img width="454" alt="image" src="https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/ec8a7087-8130-4dae-ae16-8619da4e5789">
+2. <img width="451" alt="image" src="https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/a3245994-ca89-4bb3-ba79-fbf6a3812293">
+
+3. Reference photo:
+![image](https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/d28410e3-56b5-450d-bfcb-bfd597bb5aac)
+
+We noticed each "branch" of a fern is like a mini fern itself.
+
+We tried at first to use just 1 repeating pattern, but it didn't work the way we wanted - ferns just aren't built like that.
+<img width="459" alt="image" src="https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/66917267-78f4-4ded-9b6d-15c39dc62d7b">
+<img width="362" alt="image" src="https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/9cf0e8e1-0961-4603-a243-3026fc2acedc">
+
+Then we decided to use 2 custom symbols where A only had 1 added per iteration to control the fern a bit more.
+<img width="704" alt="image" src="https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/77e95764-ac42-43a2-8e2c-cb3717a56ada">
+<img width="586" alt="image" src="https://github.com/printer83mph/cis566-lab03-grammars/assets/22186744/acf6e97f-8149-483f-ba78-6bcff24fe065">
+
+This ended up working nicely and we got the shape we wanted.
+
 ## 1. Wheat grammar puzzle
 Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
 <img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
