@@ -1,22 +1,54 @@
 # lab03-grammars
-Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
+## 0. Group members:
+
+Tongwei Dai
+
+Siyuan Fu
 
 ## 1. Wheat grammar puzzle
-Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949853-cf2306b3-3537-4c24-91b5-0a3083bc87c0.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949859-5e432b4b-f18d-48b5-a9e9-8d7dba255955.png">
+The grammar we used for this part is
+```
+F=FF[-FF]F[-FF]FF-
+```
+where the `[-FF]` is the branch, and the `FF` is the stem, and the `-` at the end makes the recursive part is rotated after each iteration.
+
+The axiom is simply `F`.
+
+### Screenshots:
+
+<img width="600" alt="square1" src="./1.png">
+<img width="600" alt="square1" src="./2.png">
+<img width="600" alt="square1" src="./3.png">
 
 ## 2. Square grammar puzzle
-How about this one? Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949895-87cdfb43-da7c-4867-ab1b-107e1ba9d2a7.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949904-a9cdfe0f-319e-4ca8-9935-dd338217a7cf.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4681-80f8-ffeb54be4dcf.png">
+the grammar we used for this part is
+```
+F=F+F-F-F+F
+```
+which gives the simple shape show in the first screenshot. The rest are just the result of further recursion. To fix the orientation of the whole structure, we appended a transform node.
 
-## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant. 
+The axiom is simply `F`.
 
-## Submission
-- Create a pull request against this repository
-- In your readme, list your solutions and format your README nicely
-- Profit
+### Screenshots:
+
+<img width="600" alt="square1" src="./4.png">
+<img width="600" alt="square1" src="./5.png">
+<img width="600" alt="square1" src="./6.png">
+
+## 3. Sunflower
+<img width="600" alt="square1" src="./7.png">
+
+We used parametric and conditional production rules to model the head of a sunflower.
+
+```
+A(n) : n < 900 = +(137.5)[f(n^(0.5))J]A(n+1)
+A(n) = +(137.5)[f(n^(0.5))K]A(n+1)
+```
+
+We start with `A(0)`.
+
+Some the magic numbers such as `137.5` and the square root are results of the studies on [Phyllotaxis Pattern](https://en.wikipedia.org/wiki/Phyllotaxis). The formula is derived from the Golden Ratio and has been observed in many natural phenomena.
+
+The intuition behind the production rules is that we always "stay" in the center of the flower head. At each iteration, the turtle turns by `137.5` degrees, then moves forward by the square root of the current iteration number, places an object, and then snaps back to the middle. The process continues until all objects are placed.
+
+Since we will only have `1000` iterations, the conditon `n < 900` makes sure that the turtle places the leaf `J` for the first 900 steps. Otherwise, it will use the leaf `K` which is a sunflower leaf mesh.
