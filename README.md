@@ -1,3 +1,28 @@
+# Team Members
+Yue Zhang
+
+# Rules screenshot
+
+Wheat grammar
+![](lsys1.png)
+
+Square grammar
+![](lsys2.png)
+
+Custom plant grammar
+Three figures at n = 3, n = 7 and n = 10:
+
+![](custom_3.png)
+
+![](custom_5.png)
+
+![](custom_7.png)
+
+![](tree.png)
+
+This is a tree with a lot of branches on the top. Rule 1 determines how each branch should grow. [[X]+X] creates a bifurcation where two branches grow from the main trunk. F[+FX]-X continues the main branch. All bracket gives a substructure aside from the mainbranch to provide a bunch of twigs tangling together. Rule 2 grows the branch by simply extending it.
+
+
 # lab03-grammars
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
