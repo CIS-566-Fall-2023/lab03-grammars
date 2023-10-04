@@ -1,6 +1,6 @@
 # lab03-grammars - Amy Liu and Nick Liu
 ## 1. Wheat grammar puzzle
-Our Solution:\
+Our Solution:
 
 <img width="200" alt="square1" src="puzzle1/1-iter.png">
 
@@ -14,7 +14,7 @@ Rules:\
 
 
 ## 2. Square grammar puzzle
-Our Solution:\
+Our Solution:
 
 <img width="200" alt="square1" src="puzzle2/1-iter.png">
 
