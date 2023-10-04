@@ -25,7 +25,7 @@ Angle: 90
 | *iterations=1* | *iterations=2* | *iterations=3* | *iterations=4* |
 
 ## 3. Custom L-System
-We wanted to make a snoflake for our custom L-system, so we tried a bunch of stuff and this is what we finally came up with. This is the grammar that we used:
+We wanted to make a snowflake for our custom L-system, so we tried a bunch of stuff and this is what we finally came up with. This is the grammar that we used:
 ```
 Premise:        D
 Rule1:          C=F[--F(.2)C][++F(.2)C]FC[--F(.13)C][++F(.13)C]FC[--FC][++FC]FC
