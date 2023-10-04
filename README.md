@@ -1,5 +1,48 @@
 # lab03-grammars
-Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
+
+# Jiefu Ling and Shixuan Fang
+# Wheat Grammar
+Premise: F \
+Angle: 20 \
+Rule: F->FF[-FF]F[-FF]FF- \
+<img width="500" alt="square1" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/1.png">
+<img width="500" alt="square2" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/2.png">
+<img width="500" alt="square3" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/3.png">
+
+# Square Grammar
+Premise: +F \
+Angle: 90 \
+Rule: F->F-F+F+F-F \
+<img width="500" alt="square1" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/4.png">
+<img width="500" alt="square2" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/5.png">
+<img width="500" alt="square3" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/6.png">
+
+# Custom Plant
+Branch: \
+  Premise: FFFA \
+  Angle: 30 \
+  Rule: A->[B]////[B]////[B] \
+        B->-FFFAK \
+
+Leaf: \
+  Premise: [A][B] \
+  Angle: 20 \
+  Rule: A->[+A{.].C.} \
+        B->[-B{.].C.} \
+        C->FFFC \ \
+<img width="500" alt="square1" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/7.png">
+<img width="500" alt="square2" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/8.png">
+<img width="500" alt="square3" src="https://github.com/Jeff-Ling/lab03-grammars/blob/main/9.png"> \
+
+**Rule Definitions:**
+1. **Rule 1**: Utilized for constructing the primary branches.
+2. **Rule 2**: Appended a rotated line at the termination of each branch to simulate the finer nuances of branch formations.
+
+**Leaf Representation:**
+- In our design, the symbol `K` stands for the leaf. This leaf structure is modeled using another L-system.
+
+**Leaf Generation:**
+- To visualize the leaf, we employ polyton triangles. By connecting these triangles, we achieve a detailed representation of the leaf structure.
 
 ## 1. Wheat grammar puzzle
 Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
