@@ -1,4 +1,4 @@
-# lab03-grammars
+# lab03-grammars | Aboudi Rai
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
 ## 1. Wheat grammar puzzle
@@ -25,7 +25,7 @@ src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4
 <img width="400" alt="" src="img/square-rule.png">
 
 ### My Results
-<img width="400" alt="" src="img/square-result.png">
+<img width="400" alt="" src="img/square-result.">
 
 ## 3. Custom plant
 Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of
@@ -38,12 +38,17 @@ iterations of your output plant.
 <img width="400" alt="square3" src="img/plant-ref.jpg">
 
 ### My Grammar
-<img width="" alt="" src="">
+<img width="" alt="" src="img/plant-rule.png">
 
 ### My Result
-<img width="" alt="" src="">
+<img width="" alt="" src="img/plant-result.png">
 
 ### Discussion
+Originally wanting to model a lilyturf house plant, I was playing around with the 3D angle modifiers
+and found myself creating branches from all 3D
+directions. I was immediately reminded of a dandelion, and went ahead and created a long wiggly
+stem, with a node surrounded by white seedlings.
+
 
 ## Submission
 - Create a pull request against this repository
