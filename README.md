@@ -13,7 +13,7 @@ Rules:
 ![image](https://github.com/wc41/lab03-grammars/assets/97757188/d69ff915-d796-4994-ac72-e975c0c19210)
 ![image](https://github.com/wc41/lab03-grammars/assets/97757188/cb59fb5b-cad2-4c08-80b6-a7822b6314a8)
 
-(okay to be more accurate to the prompt replace the negatives with positives)
+(okay to be more accurate to the prompt replace the positives with negatives)
 
 ## 2. Square grammar puzzle
 
