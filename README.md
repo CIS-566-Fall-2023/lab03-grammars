@@ -8,10 +8,10 @@ Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in
 <img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949859-5e432b4b-f18d-48b5-a9e9-8d7dba255955.png">
 
 ### My Grammar
-<img width="" alt="" src="">
+<img width="" alt="" src="img/wheat-rule.png">
 
 ### My Result
-<img width="" alt="" src="">
+<img width="" alt="" src="img/wheat-result.png">
 
 
 ## 2. Square grammar puzzle
@@ -22,10 +22,10 @@ How about this one? Take a screenshot of your rules.\
 src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4681-80f8-ffeb54be4dcf.png">
 
 ### My Grammar
-<img width="" alt="" src="">
+<img width="400" alt="" src="img/square-rule.png">
 
-### My Result
-<img width="" alt="" src="">
+### My Results
+<img width="400" alt="" src="img/square-result.png">
 
 ## 3. Custom plant
 Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of
@@ -35,7 +35,7 @@ What are the components? What do each of the rules do? Be sure to also include i
 iterations of your output plant. 
 
 ### My Plant
-<img width="200" alt="square3" src="">
+<img width="400" alt="square3" src="img/plant-ref.jpg">
 
 ### My Grammar
 <img width="" alt="" src="">
