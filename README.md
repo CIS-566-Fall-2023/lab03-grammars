@@ -1,22 +1,38 @@
-# lab03-grammars
-Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
+# Claire Lu & Dineth Meegoda - lab03-grammars
 
 ## 1. Wheat grammar puzzle
-Look at these iterations (n = 1, 2, 3) of a one-rule grammar. Using the built in symbols in Houdini, design a grammar that produces this output. Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949661-a3a0e1f7-7d68-4b9e-8384-d9991e1e9fd2.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949853-cf2306b3-3537-4c24-91b5-0a3083bc87c0.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949859-5e432b4b-f18d-48b5-a9e9-8d7dba255955.png">
+Iterations (n = 1, 2, 3) of the wheat one-rule grammar:\
+<img width="200" alt="square1" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/bc486538-383f-44c5-b5c3-cecd33b9af3d">
+<img width="200" alt="square2" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/1dd33b9a-f47c-431c-a9fb-ac8a70186edd">
+<img width="200" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/11b4daaa-1b05-4f41-9c90-c9d5ff1021c6">
+
+Rules:\
+<img width="600" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/064bb722-0af0-4d14-8806-cd225baeea70">
 
 ## 2. Square grammar puzzle
-How about this one? Take a screenshot of your rules.\
-<img width="200" alt="square1" src="https://user-images.githubusercontent.com/1758825/193949895-87cdfb43-da7c-4867-ab1b-107e1ba9d2a7.png">
-<img width="200" alt="square2" src="https://user-images.githubusercontent.com/1758825/193949904-a9cdfe0f-319e-4ca8-9935-dd338217a7cf.png">
-<img width="200" alt="square3" src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4681-80f8-ffeb54be4dcf.png">
+Iterations (n = 1, 2, 3) of the square grammar:\
+<img width="200" alt="square1" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/f2e93379-6fa8-4a91-ada2-d7f72b1363b1">
+<img width="200" alt="square2" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/543fef50-dcce-48bc-b6b4-71229dbb49f9">
+<img width="200" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/0d1b1d17-2bde-42a8-ab8d-70b4e1623580">
+
+Rules:\
+<img width="600" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/f52ba6f8-d85c-4033-b78f-000f13ded734">
+
 
 ## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant. 
+For our custom plant, we wanted to make a nice round leaf that curved toward a point at the top!
 
-## Submission
-- Create a pull request against this repository
-- In your readme, list your solutions and format your README nicely
-- Profit
+Structure:
+Our leaf is made of a series of straight and rotated lines. The needles that stick out from the spine are composed of rotated line segments, with each consecutive segment slightly more rotated, to form a line that looks like it's curving upwards. For symmetry, this is repeated on the other side of the spine. Then, this entire structure is repeated again as we travel up the spine of the leaf, each time becoming smaller.
+
+This visual effect is achieved through our rules by making use of the iteration, i, and scaling the length of a line segment by some constant (less than 1) multiplied by i.
+
+Iterations (n = 1, 2, 4, 10, 38) of our custom plant grammar:\
+<img width="180" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/3a99f056-7855-4a35-851a-92abf130d499">
+<img width="180" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/6806cb7a-c224-4ef3-bb72-35617f42de66">
+<img width="180" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/ffb2d6ee-108c-4967-936d-1cea0dfa3842">
+<img width="180" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/7c5f2301-1ad9-47b5-90d5-0c77e818848a">
+<img width="180" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/a1ba6103-bd28-4027-82d7-508611366717">
+
+Rules:\
+<img width="600" alt="square3" src="https://github.com/ClaireL21/lab03-grammars/assets/102630261/846d0e29-76fb-4abf-b66a-90484d781865">
