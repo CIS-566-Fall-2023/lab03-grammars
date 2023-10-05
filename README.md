@@ -25,7 +25,7 @@ src="https://user-images.githubusercontent.com/1758825/193949910-928e5993-ce26-4
 <img width="400" alt="" src="img/square-rule.png">
 
 ### My Results
-<img width="400" alt="" src="img/square-result.">
+<img width="400" alt="" src="img/square-result.png">
 
 ## 3. Custom plant
 Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of
