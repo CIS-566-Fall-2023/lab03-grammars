@@ -1,4 +1,28 @@
 # lab03-grammars
+by Sherry Li
+
+## 1. Wheat Grammar
+Iteration 4 and the rules can be seen below.
+<img width="80%" src="wheat_grammar.png">
+
+## 2. Square Grammar
+Iteration 4 and the rules can be seen below.
+<img width="80%" src="square_grammar.png">
+
+## 3. Custom Plant
+I chose to emulate the veins of a maple leaf! From looking at references, the general construction I observed was five primary veins that branched off in an alternating left and right pattern. These sub-veins would then branch off again in a similar pattern.
+
+<img width="80%" src="maple_leaf.webp">
+
+My rules and iterations 1-5 can be seen below.
+
+<img width="80%" src="maple_leaf_rules.png">
+<img width="80%" src="maple_1.png">
+<img width="80%" src="maple_2.png">
+<img width="80%" src="maple_3.png">
+<img width="80%" src="maple_4.png">
+<img width="80%" src="maple_5.png">
+
 Let's practice using grammars! For this lab, please pull up the L-system node in Houdini.
 
 ## 1. Wheat grammar puzzle
