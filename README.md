@@ -1,5 +1,5 @@
 # lab03-grammars
-Team: Keyu and Kehan
+Team members: Keyu and Kehan
 
 ## 1. Wheat grammar puzzle
 <img src="Lsystem1-3.png">
@@ -13,9 +13,11 @@ Team: Keyu and Kehan
 <img src="Lsystem2-1.png">
 
 ## 3. Custom plant
-Choose a plant in the world. Working off a reference, design a grammar that mimics the structure of that plant. Unlike our simple puzzles, please use multiple rules for greater complexity. Think carefully about the structure of your grammar! EXPLAIN the structure of your plant in the README. What are the components? What do each of the rules do? Be sure to also include images of a few iterations of your output plant. 
+Explanation: We tried to create some symmetric trees like a pine tree. We used multiple rules for this one. The rule F=FF makes the branches longer, and the rule with X creates branches with rotations and allows for a symmetrical branches. We tried a few generations and n=10 and n=5 which look nice are shown below.  
+<img src="Lsystem3-3.png">
+<img src="Lsystem3-4.png">
 
-## Submission
-- Create a pull request against this repository
-- In your readme, list your solutions and format your README nicely
-- Profit
+
+We also experimented with single rule grammar and put here just to show. At n=4 they look nice.
+<img src="Lsystem3-1.png">
+<img src="Lsystem3-2.png">
